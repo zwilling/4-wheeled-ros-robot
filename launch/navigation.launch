@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="tf" type="static_transform_publisher" name="hokuyo_link_broadcaster" args="0 0 0.08 0 0 0 1 base_link base_laser 100" />
+</launch>
