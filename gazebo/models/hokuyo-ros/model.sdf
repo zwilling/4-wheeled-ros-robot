@@ -9,7 +9,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://hokuyo/meshes/hokuyo.dae</uri>
+            <uri>model://hokuyo-ros/meshes/hokuyo.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -47,7 +47,10 @@
             <resolution>0.01</resolution>
           </range>
         </ray>
-        <plugin name="laser" filename="libRayPlugin.so" />
+	<plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
+          <topicName>/qbot/laser/scan</topicName>
+          <frameName>base_laser</frameName>
+	</plugin>
         <always_on>1</always_on>
         <update_rate>30</update_rate>
         <visualize>true</visualize>
