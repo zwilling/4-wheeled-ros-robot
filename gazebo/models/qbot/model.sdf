@@ -241,12 +241,23 @@
         <use_parent_model_frame>true</use_parent_model_frame>
       </axis>
     </joint>
-    <plugin name="SkidSteerDrivePlugin" filename="libSkidSteerDrivePlugin.so">
-      <right_front>right_front</right_front>
-      <right_rear>right_rear</right_rear>
-      <left_front>left_front</left_front>
-      <left_rear>left_rear</left_rear>
+
+    <plugin filename="libgazebo_ros_skid_steer_drive.so" name="skid_steer_drive_controller">
+      <updateRate>100.0</updateRate>
+      <robotNamespace>qbot</robotNamespace>
+      <leftFrontJoint>left_front</leftFrontJoint>
+      <rightFrontJoint>right_front</rightFrontJoint>
+      <leftRearJoint>left_rear</leftRearJoint>
+      <rightRearJoint>right_rear</rightRearJoint>
+      <wheelSeparation>0.36</wheelSeparation>
+      <wheelDiameter>0.11</wheelDiameter>
+      <robotBaseFrame>base_link</robotBaseFrame>
       <MaxForce>5.0</MaxForce>
+      <torque>200</torque>
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <broadcastTF>1</broadcastTF>
     </plugin>
        
       <include>
