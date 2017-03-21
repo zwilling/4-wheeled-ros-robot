@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>355</width>
-    <height>134</height>
+    <width>374</width>
+    <height>180</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -62,7 +62,14 @@ Please enter a target poision and press start</string>
             </widget>
            </item>
            <item>
-            <widget class="QDoubleSpinBox" name="doubleSpinBox_x"/>
+            <widget class="QDoubleSpinBox" name="doubleSpinBox_x">
+             <property name="minimum">
+              <double>-20.000000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>20.000000000000000</double>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
@@ -79,7 +86,14 @@ Please enter a target poision and press start</string>
             </widget>
            </item>
            <item>
-            <widget class="QDoubleSpinBox" name="doubleSpinBox_y"/>
+            <widget class="QDoubleSpinBox" name="doubleSpinBox_y">
+             <property name="minimum">
+              <double>-20.000000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>20.000000000000000</double>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
@@ -96,7 +110,14 @@ Please enter a target poision and press start</string>
             </widget>
            </item>
            <item>
-            <widget class="QDoubleSpinBox" name="doubleSpinBox_ori"/>
+            <widget class="QDoubleSpinBox" name="doubleSpinBox_ori">
+             <property name="minimum">
+              <double>-3.140000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>3.140000000000000</double>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
