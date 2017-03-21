@@ -1,0 +1,50 @@
+% \lstdefinelanguage{Lua}
+% {
+%   morekeywords={and,break,do,else,elseif,end,false,for,function,
+%                 if,in,local,nil,not,or,repeat,return,then,true,until,while},
+%   sensitive=true,
+%   morecomment=[l]{--},
+%   morecomment=[s]{--[[}{--]]},
+%   morestring=[b]{"},
+%   morestring=[s]{[==[}{]==]},
+% }
+
+% default style
+\lstdefinestyle{Cpp}
+{
+  language=C++,
+  basicstyle=\ttfamily,
+  breaklines=true,
+  showstringspaces=false,
+  %keywordstyle=\bfseries,
+  keywordstyle=\color{Mulberry},
+  frame=lines,
+  %belowcaptionskip=8pt,
+  emphstyle=\itshape,
+  %numbers=left,
+  stepnumber=1,
+  backgroundcolor=\color{blue!10},
+  rulecolor=\color{blue!50},
+  fillcolor=\color{blue!20},
+  framexleftmargin=18pt,
+  xleftmargin=18pt,
+  % stringstyle=\color{BitterSweet},
+  stringstyle=\color{BrickRed},
+  commentstyle=\color{BrickRed},
+  % emph={getup, servo, depends_skills},
+  %emphstyle=\underbar,
+  %numbers=left,
+  %stepnumber=1,
+  %%stringstyle=\ttfamily, % typewriter type for strings
+  captionpos=b
+}
+\lstdefinestyle{SmallCpp}{
+  style=Cpp,
+  basicstyle=\ttfamily\footnotesize,
+  numbersep=6pt,
+}
+\lstdefinestyle{ReallySmallCpp}{
+  style=Cpp,
+  basicstyle=\ttfamily\tiny,
+  numbersep=5pt,
+}

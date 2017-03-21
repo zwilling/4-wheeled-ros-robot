@@ -1,6 +1,8 @@
 # 4-wheeled-ros-robot
 A 4 wheeled robot for SLAM and navigation with ROS and Gazebo
 
+Video: https://youtu.be/NZH0TxBaLyU
+
 ## Setup
 You clone this package into your catkin-workspace/src folder and then build it with catkin_make.
 I am using ROS Kinetic with the gazebo and navigation stack under Ubuntu 16.04. For older ROS versions you probably have to use qt4 for the GUI plugin.
@@ -32,3 +34,6 @@ Then, you can send navigation commands via
 rqt --standalone qbot_4wheeled_robot
 ```
 or with rviz.
+
+## Note
+Don't expect too much from the simulation because the skid-steering is inaccurately simulated. However this could be fixed by tuning physics parameters in the simulation or by simulating the robot motion on a higher abstraction level.
