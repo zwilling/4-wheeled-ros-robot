@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   rqt_gui
   rqt_gui_cpp
+  geometry_msgs
 )
 find_package(Qt5Widgets REQUIRED)
 
@@ -32,7 +33,7 @@ set(qbot_4wheeled_robot_INCLUDE_DIRECTORIES
 catkin_package(
   INCLUDE_DIRS ${qbot_4wheeled_robot_INCLUDE_DIRECTORIES}
   LIBRARIES ${PROJECT_NAME} 
-  CATKIN_DEPENDS rqt_gui rqt_gui_cpp roscpp
+  CATKIN_DEPENDS rqt_gui rqt_gui_cpp roscpp geometry_msgs
 )
 
 catkin_python_setup()

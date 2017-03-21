@@ -11,6 +11,8 @@
 #include <rqt_gui_cpp/plugin.h>
 #include <ui_gui_plugin.h>
 #include <QWidget>
+#include <geometry_msgs/PoseStamped.h>
+#include <ros/ros.h>
 
 namespace qbot_4wheeled_robot {
 
@@ -32,6 +34,11 @@ public:
 private:
 	Ui::GuiPlugin ui_;
 	QWidget* widget_;
+	ros::Publisher navigation_pub_;
+
+protected slots:
+	//callback function for button push
+	virtual void on_start_button_push();
 };
 
 } /* namespace qbot_4wheeled_robot */
