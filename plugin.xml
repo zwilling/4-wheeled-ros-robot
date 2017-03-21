@@ -1,0 +1,11 @@
+<library path="devel/lib/libqbot_4wheeled_robot">
+  <class name="qbot_4wheeled_robot/GuiPlugin" type="qbot_4wheeled_robot::GuiPlugin" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      ROS based GUI for QBot Assesment Exercise
+    </description>
+    <qtgui>
+      <label>QBot RQT GUI</label>
+      <icon type="theme">system-help</icon>
+    </qtgui>
+  </class>
+</library>
